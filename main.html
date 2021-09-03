@@ -1,0 +1,44 @@
+<script src="main.js"></script>
+
+<html>
+
+	<head>
+		  <link rel="stylesheet" href="main.css">
+		<title>Jogo Da Velha - JSOO</title>
+	</head>
+	<body>
+		<div id="maincontainer">
+			<div id="navbar">
+				<h1>Jogo Da Velha - JSOO</h1>
+				<p id="p-qtdLines">
+					Quantidade de Linhas e Colunas: 
+					<input id="qtdLines" type="text" placeholder="0">
+				</p>
+				<p id="p-qtdPlayers">
+					Quantidade de Jogadores: 
+					<input id="qtdPlayers" type="text" placeholder="0">
+				</p>				
+				<button id="start" onclick="Start()">Novo Jogo</button>
+				<button id="reset" onclick="ResetPoints()">Resetar Pontos</button>
+				<button id="reset" onclick="ResetAll()">Reiniciar</button>
+			</div>
+      <div id="containerCentralHistories"> 
+        <div id="score">
+          <h2>Placar</h2>
+          <div id="containerScores">
+          </div>
+        </div>
+  			<div id="central">
+  				<h2>Tabuleiro</h2>
+  				<div id="containerBoards">
+  				</div>
+  			</div>
+        <div id="history">
+          <h2>Histórico</h2>
+          <div id="containerHistories">
+          </div>
+        </div>  
+			</div>
+		</div>
+	</body>
+</html>
